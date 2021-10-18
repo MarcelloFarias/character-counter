@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Character counter</h2>
+        <textarea class="txt-area" onkeyup="countCharacter(this);" placeholder="type here"></textarea>
+        <p class="result"></p>
+    </div>
+
+    <script>
+        function countCharacter(str) {
+            let result = document.querySelector('.result').innerHTML = str.value.length + ' characteres';
+        }
+    </script>
+</body>
+</html>
